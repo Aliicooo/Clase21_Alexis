@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Portafolio - Análisis de Datos</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: #e5e7eb;
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  background: #0f172a;
+  padding: 15px 0;
+  border-bottom: 1px solid #1f2937;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: #38bdf8;
+  font-size: 18px;
+}
+
+nav a {
+  color: #e5e7eb;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.hero h2 {
+  font-size: 40px;
+  color: #38bdf8;
+}
+
+.hero p {
+  color: #94a3b8;
+  max-width: 700px;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: #22c55e;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #16a34a;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #111827;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #1f2937;
+}
+
+/* AUTOR */
+.author {
+  background: #111827;
+  padding: 30px;
+  border-radius: 16px;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.author img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  border-top: 1px solid #1f2937;
+  margin-top: 40px;
+  color: #94a3b8;
+}
+
+/* ANIMACION */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+  .grid {grid-template-columns: 1fr;}
+  .author {grid-template-columns: 1fr;}
+  .hero h2 {font-size: 28px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <h1>📊 Portafolio Estadístico</h1>
+      <div>
+        <a href="#inicio">Inicio</a>
+        <a href="#proyecto">Shiny</a>
+        <a href="#autor">Autor</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="container">
+    <h2>Dashboard de Empleados con R Shiny + MongoDB</h2>
+    <p>Proyecto académico de análisis de datos, visualización interactiva y despliegue en la nube.</p>
+
+    <a class="btn" href="https://r15kas-alexis0steeven-galarza0calu0a.shinyapps.io/clase_21/" target="_blank">
+      🚀 Abrir Dashboard Shiny
+    </a>
+  </div>
+</section>
+
+<!-- PROYECTO -->
+<section id="proyecto" class="container grid">
+
+  <div class="card">
+    <h3>📡 MongoDB Atlas</h3>
+    <p>Base de datos en la nube para almacenamiento de empleados.</p>
+    <!-- imagen mongodb -->
+	<img src="img/mongo.png" style="width:100%; border-radius:12px;">
+  </div>
+
+  <div class="card">
+    <h3>📊 Visualización</h3>
+    <p>Gráficos dinámicos por departamento, sueldo y análisis estadístico.</p>
+    <!-- imagen graficos -->
+	<img src="img/imagen1.png" style="width:100%; border-radius:12px;">
+  </div>
+
+</section>
+
+<!-- AUTOR -->
+<section id="autor" class="container author">
+
+  <div>
+    <img src="img/mi_foto.jpg">
+  </div>
+
+  <div>
+    <h2>👨‍🎓 Autor del Proyecto</h2>
+    
+    <p><strong>Nombre:</strong> Alexis Galarza</p>
+    <p><strong>Carrera:</strong> Estadística</p>
+    <p><strong>Semestre:</strong> 5</p>
+    <p><strong>Institución:</strong> Escuela Superior Politécnica de Chimborazo</p>
+    <p><strong>Contacto:</strong> alexisgalarzac@gmail.com</p>
+  </div>
+
+</section>
+
+<!-- SHINY -->
+<section class="container card" style="margin-top:40px; text-align:center;">
+
+  <h2>🔥 Dashboard en Vivo</h2>
+  <p>Accede a la aplicación interactiva desarrollada en R Shiny.</p>
+
+  <a class="btn" href="https://r15kas-alexis0steeven-galarza0calu0a.shinyapps.io/Clase20/" target="_blank">
+    Ver Aplicación
+  </a>
+</section>
+
+<footer>
+  © 2026 - Portafolio de Análisis de Datos
+</footer>
+
+</body>
+</html>
